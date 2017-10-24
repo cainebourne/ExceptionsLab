@@ -27,7 +27,7 @@ public class Challenge1 {
         String lastName = app.extractLastName(fullName);
         msg = "Your last name is: " + lastName;
         } catch (IllegalArgumentException iae) {
-            msg = iae.getMessage() + " please try again";
+            msg = iae.getMessage() + " not valid, please reenter";
         }
         
         JOptionPane.showMessageDialog(null, msg);
@@ -42,7 +42,7 @@ public class Challenge1 {
         
         // Your code goes here.
         if (fullName == null || fullName.isEmpty() || fullName.split(" ").length != 2) {
-            throw new IllegalArgumentException("This is not a valid Full Name");
+            throw new IllegalArgumentException("Must enter a valid full name");
         }
         String[] nameArray = fullName.split(" ");
         lastName = nameArray[LAST_NAME_INDEX];
