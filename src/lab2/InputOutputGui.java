@@ -24,7 +24,7 @@ public class InputOutputGui {
             lastName = nameService.extractLastName(fullName);
             msg = "Your last name is: " + lastName;
         } catch (IllegalArgumentException iae) {
-            msg = iae.getMessage() + " please try again";
+            msg = iae.getMessage() + " invalid entry please reenter";
         }
         JOptionPane.showMessageDialog(null, msg);
         
