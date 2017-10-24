@@ -8,7 +8,7 @@ package lab2;
  * @version 1.00
  */
 public class NameService {
-    private static final int LASTNAMEINDEX = 1;
+    private static final int LAST_NAME_INDEX = 1;
     /**
      * Finds and returns the last name from within a full name. Caution: 
      * No validation is performed.
@@ -24,10 +24,10 @@ public class NameService {
         // write your code here to extract the lastName and store in the
         // above local variable
         if (fullName == null || fullName.isEmpty() || fullName.split(" ").length != 2) {
-            throw new IllegalArgumentException("This is not a valid Full Name");
+            throw new IllegalArgumentException("Not a valid full name");
         }
         String[] nameArray = fullName.split(" ");
-        lastName = nameArray[LASTNAMEINDEX];
+        lastName = nameArray[LAST_NAME_INDEX];
         return lastName;
     }
     
