@@ -16,7 +16,7 @@ import javax.swing.JOptionPane;
  * @version 1.00
  */
 public class Challenge1 {
-    private static final int LAST_NAME_IDX = 1;
+    private static final int LASTNAMEINDEX = 1;
 
     // this method responsible for output
     public static void main(String[] args) {
@@ -45,7 +45,7 @@ public class Challenge1 {
             throw new IllegalArgumentException("This is not a valid Full Name");
         }
         String[] nameArray = fullName.split(" ");
-        lastName = nameArray[LAST_NAME_IDX];
+        lastName = nameArray[LASTNAMEINDEX];
         
         return lastName;
     }
